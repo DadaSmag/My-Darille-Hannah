@@ -15,6 +15,22 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .play-button {
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    .play-button:hover {
+      background-color: #b52a58;
     }
 
     .letter {
@@ -78,6 +94,14 @@
   </style>
 </head>
 <body>
+
+  <button class="play-button" onclick="document.getElementById('bg-music').play()">🎵 Play Music</button>
+
+  <audio id="bg-music" loop>
+    <source src="BetterPlace.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
   <div class="letter">
     <div class="logo">
       <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
@@ -116,12 +140,6 @@
     <p>I love you always, My Love. 💖</p>
 
     <p class="signature">— Smaggy</p>
-
-<audio autoplay loop muted>
-  <source src="BetterPlace.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
   </div>
 </body>
 </html>
