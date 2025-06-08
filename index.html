@@ -134,8 +134,30 @@
 
     <p class="signature">— Smaggy</p>
     
-<p style="margin-bottom: 0.5rem;">When you're done reading, my love, please play this song:</p>
-<button class="play-button" onclick="document.getElementById('bg-music').play()">🎶Press to Hear My Heart </button>
+<p style="margin-bottom: 0.5rem; color: #f8a5c2;">
+  When you're done reading, my love, please play this song:
+</p>
+
+<button class="play-button" onclick="document.getElementById('bg-music').play()">🤍 Better Place</button>
+
+<style>
+  .play-button {
+    background-color: rgba(248, 165, 194, 0.2); /* transparent light pink */
+    color: white;
+    border: 2px solid #f8a5c2;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .play-button:hover {
+    background-color: rgba(248, 165, 194, 0.35);
+    color: #fff0f5;
+  }
+</style>
+
 
   <audio id="bg-music" loop>
     <source src="BetterPlace.mp3" type="audio/mpeg">
